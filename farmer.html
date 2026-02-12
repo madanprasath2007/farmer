@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Crop Advisory & Auction System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        :root {
+            --primary: #166534;
+            --secondary: #1e3a8a;
+            --accent: #f59e0b;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #166534 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-800">Smart Crop System</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#abstract" class="hover:text-emerald-600 transition">Abstract</a>
+                    <a href="#solution" class="hover:text-emerald-600 transition">Solution</a>
+                    <a href="#innovation" class="hover:text-emerald-600 transition">Innovation</a>
+                    <a href="#impact" class="hover:text-emerald-600 transition">Impact</a>
+                </div>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars text-xl text-slate-600"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Title Section -->
+    <header class="gradient-bg text-white py-20 px-4 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/10 border border-white/20 text-xs font-bold tracking-widest uppercase">
+                L&T Construction • General Business 19
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Smart Crop Advisory <br> & Auction System
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed mb-10">
+                A seed-to-sale digital infrastructure empowering India's 86% smallholder farmers through multilingual AI intelligence and direct market competition.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#solution" class="bg-white text-emerald-900 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-emerald-50 transition">Explore Solution</a>
+                <a href="#abstract" class="bg-emerald-800/40 border border-white/30 text-white px-8 py-3 rounded-full font-bold hover:bg-emerald-800/60 transition">View Abstract</a>
+            </div>
+        </div>
+        <!-- Decorative blobs -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section id="abstract" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-1 w-12 bg-emerald-600 rounded-full"></div>
+                <h2 class="text-sm font-bold uppercase tracking-widest text-emerald-600">The Abstract</h2>
+            </div>
+            <p class="text-2xl md:text-3xl font-light text-slate-700 leading-snug">
+                "Small and marginal farmers face a massive <span class="text-emerald-600 font-semibold">information-to-income</span> gap. Our ecosystem handholds farmers from planting to profit, using Edge-AI for diagnosis and a transparent digital auction to eliminate middlemen."
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Solution Grid -->
+    <section id="solution" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">The Four Pillars</h2>
+                <p class="text-slate-500 mt-2">Integrating high-tech AI into simple rural workflows.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pillar 1 -->
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="feature-icon bg-emerald-100 text-emerald-600">
+                        <i class="fa-solid fa-mobile-screen text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">The Product</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A voice-driven dashboard providing end-to-end guidance. Integrates real-time weather alerts and market prices from AGMARKNET.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="feature-icon bg-blue-100 text-blue-600">
+                        <i class="fa-solid fa-microscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">AI Diagnosis</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        An Edge-AI system that identifies crop diseases instantly via photos. Provides offline treatment steps to reduce chemical waste.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="feature-icon bg-amber-100 text-amber-600">
+                        <i class="fa-solid fa-gavel text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Smart Auction</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A live bidding platform where wholesalers compete directly. Bypasses commission agents to capture 100% market price.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="feature-icon bg-indigo-100 text-indigo-600">
+                        <i class="fa-solid fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">AI Verification</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Computer vision grades harvest quality automatically. This "Verified" digital certificate builds trust and boosts final bidding value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation & Problem Solving -->
+    <section id="innovation" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">How it addresses the problem</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Eliminating Middlemen</h4>
+                                <p class="text-slate-500 text-sm">Removes agents taking 10-20% commission, returning full profits to farmers.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Preventing Yield Loss</h4>
+                                <p class="text-slate-500 text-sm">Early AI detection cuts down the 25% annual loss from late disease discovery.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-emerald-600"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Voice-First Accessibility</h4>
+                                <p class="text-slate-500 text-sm">Using Bhashini AI to allow non-literate farmers to navigate via voice in 22+ dialects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 p-8 bg-slate-900 rounded-3xl text-white">
+                        <h4 class="text-emerald-400 font-bold mb-2 underline decoration-emerald-400/30">Innovation Highlight</h4>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Unlike typical apps, this system links **AI-verified quality** directly to a **sale price**, creating an objective trust loop between remote buyers and marginal farmers."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl floating">
+                        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c3c1b?auto=format&fit=crop&q=80&w=800" alt="Farmer with Phone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] border border-slate-100">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase mb-1">Impact Goal</p>
+                        <p class="text-slate-800 font-bold text-lg leading-tight">30%+ Increase in Farmer Income</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Benefits -->
+    <section id="impact" class="py-20 px-4 bg-emerald-950 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Potential Impact & Benefits</h2>
+                <p class="text-emerald-400 mt-2">Social, Economic, and Environmental Transformation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-4 text-emerald-500"><i class="fa-solid fa-users"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Social Inclusion</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Brings 86% of marginal farmers into the digital economy through radical voice-first accessibility.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-4 text-emerald-500"><i class="fa-solid fa-leaf"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Environmental Health</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Precise AI-guided spraying reduces soil toxicity and chemical runoff into groundwater.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-4 text-emerald-500"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4 class="text-xl font-bold mb-4">Economic Wealth</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Ensures money stays in the village rather than with commission agents, boosting rural liquidity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 px-4 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-emerald-600 rounded flex items-center justify-center text-white text-xs">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <span class="font-bold text-slate-800">Smart Crop System 2025</span>
+            </div>
+            <p class="text-slate-400 text-xs uppercase tracking-widest font-bold">
+                Developed for SIH • L&T Construction
+            </p>
+            <div class="flex gap-6 text-slate-400 hover:text-slate-600 transition">
+                <i class="fa-brands fa-github pointer-events-none"></i>
+                <i class="fa-brands fa-linkedin pointer-events-none"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
